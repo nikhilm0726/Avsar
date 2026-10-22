@@ -2,7 +2,7 @@ let globalData = []; // Store data so we can filter it
 
     async function initApp() {
         try {
-            const response = await fetch('./data/localities.json');
+            const response = await fetch('./localities.json');
             globalData = await response.json();
             
             const selector = document.getElementById('locality-selector');
